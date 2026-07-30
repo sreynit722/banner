@@ -153,8 +153,7 @@
 
         .hero-content img {
             height: 120px;
-            margin-top: -70px;
-            margin-bottom: 100px;
+
         }
 
         @keyframes heroEntrance {
@@ -189,13 +188,18 @@
             line-height: 1.6;
         }
 
+        .hero-subtitle a {
+            color: rgb(255, 253, 250);
+            font-size: larger;
+        }
+
         /* Call-To-Action Button */
         .cta-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             padding: 16px 36px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Kantumruy Pro", sans-serif;
             font-size: 16px;
             font-weight: 600;
             color: var(--accent);
@@ -295,10 +299,19 @@
     <!-- Main Hero Section -->
     <main class="hero-section">
         <div class="hero-content">
-            <img src="./cspp-logo.png" alt="logo">
-            <h1 class="hero-title">ការធ្វើបទបង្ហាញស្នាដៃសិស្សថ្នាក់ទី១១ <br><span>ការបង្កើតគេហទំព័រ</span></h1>
-            <p class="hero-subtitle"><a href="">ក្រុមទី១ មគ្គុទ្ទេសក៍ឌីជីថល / E-guide </a></p>
-            <a href="./info.html" class="cta-button">Date: 31 July 2026</a>
+            <h1 class="hero-title"><span>គេហទំព័រសិស្ស</span></h1>
+            <p class="hero-subtitle"><a href="https://travel-liteg11.vercel.app/">ក្រុមទី១៖ មគ្គុទ្ទេសក៍ឌីជីថល / E-guide
+                </a></p>
+            <p class="hero-subtitle"><a href="https://fresh-meal-cspp.vercel.app/
+">ក្រុមទី២៖ Mealkit Website </a></p>
+            <p class="hero-subtitle"><a href="https://khmerfood-cspp.vercel.app/">ក្រុមទី៣៖ Khmer food restaurant </a>
+            </p>
+            <p class="hero-subtitle"><a href="https://pc-store-cspp.vercel.app/">ក្រុមទី៤៖ Computer Shop </a></p>
+            <p class="hero-subtitle"><a href="https://reader-s-heaven.vercel.app/
+">ក្រុមទី៥៖ Reader's Haven </a></p>
+            <p class="hero-subtitle"><a href="https://yuvakar-cspp.vercel.app/">ក្រុមទី៦៖ YUVAKA </a></p>
+
+            <a href="./index.html" class="cta-button">ត្រឡប់</a>
         </div>
     </main>
 
@@ -337,7 +350,7 @@
             fullscreenToggle.addEventListener("click", () => {
                 if (!document.fullscreenElement) {
                     document.documentElement.requestFullscreen().catch(err => {
-                        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+                       console.error(`Error attempting to enable fullscreen: ${err.message}`);
                     });
                 } else {
                     if (document.exitFullscreen) {
